@@ -8,11 +8,7 @@
     "license": "AGPL-3",
     "author": "Akretion",
     "website": "http://www.shopinvader.com",
-    "depends": [
-        "product",
-        "product_attribute_set",
-        "product_attribute_set_completeness",
-    ],
+    "depends": ["product", "product_attribute_set", "attribute_set_mass_edit", "product_attribute_set_completeness"],
     "data": [
         "data/ir_module_category_data.xml",
         "security/pim_security.xml",

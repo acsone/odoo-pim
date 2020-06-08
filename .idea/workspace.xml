@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2912765e-8d5d-4769-99d7-d0347b200809" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/attribute_set_mass_edit/README.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attribute_set_mass_edit/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attribute_set_mass_edit/__manifest__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attribute_set_mass_edit/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attribute_set_mass_edit/models/attribute_attribute.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attribute_set_mass_edit/models/attribute_group.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attribute_set_mass_edit/models/mass_object.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attribute_set_mass_edit/readme/CONTRIBUTORS.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attribute_set_mass_edit/readme/DESCRIPTION.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attribute_set_mass_edit/readme/USAGE.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attribute_set_mass_edit/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attribute_set_mass_edit/tests/test_attribute_set_mass_edit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attribute_set_mass_edit/views/attribute_attribute.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pim/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pim/models/attribute_attribute.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pim/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pim/tests/test_pim_attribute_set_mass_edit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setup/attribute_set_mass_edit/odoo/addons/attribute_set_mass_edit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setup/attribute_set_mass_edit/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pim/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pim/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pim/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pim/__manifest__.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pim/__manifest__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="10" column="117" selection-start-line="10" selection-start-column="117" selection-end-line="10" selection-end-column="117" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>odoo_test_helper</find>
+      <find>set_1</find>
+      <find>partner</find>
+      <find>/pim</find>
+      <find>bus.Bus unavailable</find>
+      <find>translate</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>/product_search_multi_value</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/attribute_set_searchable/models/attribute_attribute.py" />
+        <option value="$PROJECT_DIR$/pim/__init__.py" />
+        <option value="$PROJECT_DIR$/attribute_set_mass_edit/models/attribute_attribute.py" />
+        <option value="$PROJECT_DIR$/pim_attribute_set_completeness/security/attribute_set_completeness.xml" />
+        <option value="$PROJECT_DIR$/pim/security/pim_security.xml" />
+        <option value="$PROJECT_DIR$/pim_attribute_set_completeness/views/product_view.xml" />
+        <option value="$PROJECT_DIR$/pim/views/product_view.xml" />
+        <option value="$PROJECT_DIR$/attribute_set_completeness/tests/test_attribute_set_completeness.py" />
+        <option value="$PROJECT_DIR$/pim/views/pim_view.xml" />
+        <option value="$PROJECT_DIR$/product_search_multi_value/data/search_field_data.xml" />
+        <option value="$PROJECT_DIR$/product_search_multi_value/readme/CONFIGURE.rst" />
+        <option value="$PROJECT_DIR$/product_search_multi_value/readme/CONTRIBUTORS.rst" />
+        <option value="$PROJECT_DIR$/product_search_multi_value/readme/DESCRIPTION.rst" />
+        <option value="$PROJECT_DIR$/product_search_multi_value/readme/USAGE.rst" />
+        <option value="$PROJECT_DIR$/product_search_multi_value/__manifest__.py" />
+        <option value="$PROJECT_DIR$/product_search_multi_value/README.rst" />
+        <option value="$PROJECT_DIR$/product_search_multi_value/models/product_template.py" />
+        <option value="$PROJECT_DIR$/attribute_set_completeness/readme/USAGE.rst" />
+        <option value="$PROJECT_DIR$/attribute_set_completeness/README.rst" />
+        <option value="$PROJECT_DIR$/attribute_set_completeness/models/attribute_set_completeness.py" />
+        <option value="$PROJECT_DIR$/attribute_set_completeness/models/attribute_set.py" />
+        <option value="$PROJECT_DIR$/product_attribute_set_completeness/__manifest__.py" />
+        <option value="$PROJECT_DIR$/attribute_set_completeness/models/attribute_set_owner_mixin.py" />
+        <option value="$PROJECT_DIR$/attribute_set/views/attribute_set_view.xml" />
+        <option value="$PROJECT_DIR$/attribute_set/models/attribute_attribute.py" />
+        <option value="$PROJECT_DIR$/pim/__manifest__.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="60" />
+    <option name="y" value="27" />
+    <option name="width" value="2500" />
+    <option name="height" value="1413" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="odoo-pim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="odoo-pim" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="odoo-pim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="odoo-pim" type="462c0819:PsiDirectoryNode" />
+              <item name="attribute_set" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="odoo-pim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="odoo-pim" type="462c0819:PsiDirectoryNode" />
+              <item name="attribute_set" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="odoo-pim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="odoo-pim" type="462c0819:PsiDirectoryNode" />
+              <item name="pim" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="odoo-pim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="odoo-pim" type="462c0819:PsiDirectoryNode" />
+              <item name="product_search_multi_value" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="odoo-pim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="odoo-pim" type="462c0819:PsiDirectoryNode" />
+              <item name="product_search_multi_value" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/product_search_multi_value" />
+      <recent name="$PROJECT_DIR$/product_search_multi_value/readme" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pim" />
+      <recent name="$PROJECT_DIR$/pim/views" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2912765e-8d5d-4769-99d7-d0347b200809" name="Default Changelist" comment="" />
+      <created>1591797675035</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591797675035</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="60" y="27" width="2500" height="1413" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24939467" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.3293556" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.6443914" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/attribute_set/tests/test_build_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-938">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pim/views/attribute_attribute.xml" />
+    <entry file="file://$PROJECT_DIR$/pim/README.rst" />
+    <entry file="file://$PROJECT_DIR$/pim_attribute_set/__manifest__.py" />
+    <entry file="file://$PROJECT_DIR$/attribute_set_searchable/__manifest__.py" />
+    <entry file="file://$PROJECT_DIR$/attribute_set_searchable/models/attribute_attribute.py" />
+    <entry file="file://$PROJECT_DIR$/pim/models/attribute_attribute.py" />
+    <entry file="file://$PROJECT_DIR$/pim_attribute_set_mass_edit/__manifest__.py" />
+    <entry file="file://$PROJECT_DIR$/attribute_set_mass_edit/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/pim/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/pim/tests/test_pim_attribute_set_mass_edit.py" />
+    <entry file="file://$PROJECT_DIR$/attribute_set_mass_edit/models/attribute_attribute.py" />
+    <entry file="file://$PROJECT_DIR$/pim_attribute_set_completeness/security/attribute_set_completeness.xml" />
+    <entry file="file://$PROJECT_DIR$/pim_attribute_set_completeness/views/product_view.xml" />
+    <entry file="file://$PROJECT_DIR$/product_attribute_set_completeness/views/product_template_view.xml" />
+    <entry file="file://$PROJECT_DIR$/pim/security/pim_security.xml" />
+    <entry file="file://$PROJECT_DIR$/attribute_set_completeness/tests/test_attribute_set_completeness.py" />
+    <entry file="file://$PROJECT_DIR$/pim/views/product_view.xml" />
+    <entry file="file://$PROJECT_DIR$/pim/views/pim_view.xml" />
+    <entry file="file://$PROJECT_DIR$/product_search_multi_value/readme/USAGE.rst" />
+    <entry file="file://$PROJECT_DIR$/product_search_multi_value/__manifest__.py" />
+    <entry file="file://$PROJECT_DIR$/pim/readme/CONFIGURE.rst" />
+    <entry file="file://$PROJECT_DIR$/product_search_multi_value/readme/CONFIGURE.rst" />
+    <entry file="file://$PROJECT_DIR$/product_search_multi_value/readme/CONTRIBUTORS.rst" />
+    <entry file="file://$PROJECT_DIR$/product_search_multi_value/readme/DESCRIPTION.rst" />
+    <entry file="file://$PROJECT_DIR$/product_search_multi_value/README.rst" />
+    <entry file="file://$PROJECT_DIR$/product_search_multi_value/data/search_field_data.xml" />
+    <entry file="file://$PROJECT_DIR$/product_search_multi_value/models/product_template.py" />
+    <entry file="file://$PROJECT_DIR$/attribute_set_completeness/readme/USAGE.rst" />
+    <entry file="file://$PROJECT_DIR$/attribute_set_completeness/README.rst" />
+    <entry file="file://$PROJECT_DIR$/attribute_set_completeness/__manifest__.py" />
+    <entry file="file://$PROJECT_DIR$/attribute_set_completeness/models/attribute_set_completeness.py" />
+    <entry file="file://$PROJECT_DIR$/attribute_set_completeness/models/attribute_set.py" />
+    <entry file="file://$PROJECT_DIR$/product_attribute_set_completeness/__manifest__.py" />
+    <entry file="file://$PROJECT_DIR$/attribute_set_completeness/models/attribute_set_owner_mixin.py" />
+    <entry file="file://$PROJECT_DIR$/attribute_set/views/attribute_group_view.xml" />
+    <entry file="file://$PROJECT_DIR$/attribute_set/views/attribute_attribute_view.xml" />
+    <entry file="file://$PROJECT_DIR$/attribute_set/views/attribute_set_view.xml" />
+    <entry file="file://$PROJECT_DIR$/attribute_set/models/attribute_attribute.py" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pim/__manifest__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="117" selection-start-line="10" selection-start-column="117" selection-end-line="10" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
