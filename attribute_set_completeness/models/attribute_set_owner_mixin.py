@@ -14,6 +14,7 @@ class AttributeSetOwnerMixin(models.AbstractModel):
         default="not_complete",
         readonly=True,
         compute="_compute_completion_rate",
+        store=True,
     )
 
     attribute_set_completeneness_ids = fields.One2many(
