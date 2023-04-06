@@ -282,6 +282,11 @@ class AttributeAttribute(models.Model):
 
     @api.model_create_multi
     def create(self, vals_list):
+        vals_list = [self._define_field(vals) for vals in vals_list]
+        return super().create(vals_list)
+
+    @api.model
+    def _define_field(self, vals):
         """Create an attribute.attribute
 
         - In case of a new "custom" attribute, a new field object 'ir.model.fields' will
@@ -295,77 +300,88 @@ class AttributeAttribute(models.Model):
         from `vals` before creating our new 'attribute.attribute'.
 
         """
-        for vals in vals_list:
-            if vals.get("nature") == "native":
-                # Remove all the values that can modify the related native field
-                # before creating the new 'attribute.attribute'
-                for key in set(vals).intersection(self.env["ir.model.fields"]._fields):
-                    del vals[key]
-                continue
+        if vals.get("nature") == "native":
+            # Remove all the values that can modify the related native field
+            # before creating the new 'attribute.attribute'
+            for key in set(vals).intersection(self.env["ir.model.fields"]._fields):
+                del vals[key]
+            return vals
 
-            if vals.get("relation_model_id"):
-                model = self.env["ir.model"].browse(vals["relation_model_id"])
-                relation = model.model
-            else:
-                relation = "attribute.option"
+        vals = self._hand_relation_field(vals)
 
-            attr_type = vals.get("attribute_type")
+        vals = self._handle_serialized(vals)
 
-            if attr_type == "select":
-                vals["ttype"] = "many2one"
-                vals["relation"] = relation
+        vals["state"] = "manual"
 
-            elif attr_type == "multiselect":
-                vals["ttype"] = "many2many"
-                vals["relation"] = relation
-                # Specify the relation_table's name in case of m2m not serialized
-                # to avoid creating the same default relation_table name for any attribute
-                # linked to the same attribute.option or relation_model_id's model.
-                if not vals.get("serialized"):
-                    att_model_id = self.env["ir.model"].browse(vals["model_id"])
-                    table_name = (
-                        "x_"
-                        + att_model_id.model.replace(".", "_")
-                        + "_"
-                        + vals["name"]
-                        + "_"
-                        + relation.replace(".", "_")
-                        + "_rel"
-                    )
-                    # avoid too long relation_table names
-                    vals["relation_table"] = table_name[0:60]
-
-            else:
-                vals["ttype"] = attr_type
-
-            if vals.get("serialized"):
-                field_obj = self.env["ir.model.fields"]
-
-                serialized_fields = field_obj.search(
-                    [
-                        ("ttype", "=", "serialized"),
-                        ("model_id", "=", vals["model_id"]),
-                        ("name", "=", "x_custom_json_attrs"),
-                    ]
+        return vals
+    @api.model
+    def _hand_relation_field(self, vals):
+        attr_type = vals.get("attribute_type")
+        relation = self._get_relation_model(vals)
+        if attr_type == "select":
+            vals["ttype"] = "many2one"
+            vals["relation"] = relation
+        elif attr_type == "multiselect":
+            vals["ttype"] = "many2many"
+            vals["relation"] = relation
+            # Specify the relation_table's name in case of m2m not serialized
+            # to avoid creating the same default relation_table name for any attribute
+            # linked to the same attribute.option or relation_model_id's model.
+            if not vals.get("serialized"):
+                att_model_id = self.env["ir.model"].browse(vals["model_id"])
+                table_name = (
+                    "x_"
+                    + att_model_id.model.replace(".", "_")
+                    + "_"
+                    + vals["name"]
+                    + "_"
+                    + relation.replace(".", "_")
+                    + "_rel"
                 )
+                # avoid too long relation_table names
+                vals["relation_table"] = table_name[0:60]
+        else:
+            vals["ttype"] = attr_type
 
-                if serialized_fields:
-                    vals["serialization_field_id"] = serialized_fields[0].id
+        return vals
 
-                else:
-                    f_vals = {
-                        "name": "x_custom_json_attrs",
-                        "field_description": "Serialized JSON Attributes",
-                        "ttype": "serialized",
-                        "model_id": vals["model_id"],
-                    }
+    @api.model
+    def _get_relation_model(self, vals):
+        if vals.get("relation_model_id"):
+            model = self.env["ir.model"].browse(vals["relation_model_id"])
+            relation = model.model
+        else:
+            relation = "attribute.option"
+        return relation
 
-                    vals["serialization_field_id"] = (
-                        field_obj.with_context(manual=True).create(f_vals).id
-                    )
+    @api.model
+    def _handle_serialized(self, vals):
+        if vals.get("serialized"):
+            field_obj = self.env["ir.model.fields"]
 
-            vals["state"] = "manual"
-        return super().create(vals_list)
+            serialized_fields = field_obj.search(
+                [
+                    ("ttype", "=", "serialized"),
+                    ("model_id", "=", vals["model_id"]),
+                    ("name", "=", "x_custom_json_attrs"),
+                ]
+            )
+
+            if serialized_fields:
+                vals["serialization_field_id"] = serialized_fields[0].id
+
+            else:
+                f_vals = {
+                    "name": "x_custom_json_attrs",
+                    "field_description": "Serialized JSON Attributes",
+                    "ttype": "serialized",
+                    "model_id": vals["model_id"],
+                }
+
+                vals["serialization_field_id"] = (
+                    field_obj.with_context(manual=True).create(f_vals).id
+                )
+        return vals
 
     def _delete_related_option_wizard(self, option_vals):
         """Delete the attribute's options wizards related to the attribute's options
